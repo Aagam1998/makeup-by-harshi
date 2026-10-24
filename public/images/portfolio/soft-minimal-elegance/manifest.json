@@ -1,0 +1,19 @@
+{
+  "category": "Soft and Minimal Elegance",
+  "source": "User-supplied photographs",
+  "status": "Integrated into website portfolio",
+  "images": [
+    {
+      "file": "soft-minimal-01.jpg",
+      "bytes": 363530
+    },
+    {
+      "file": "soft-minimal-02.jpg",
+      "bytes": 414461
+    },
+    {
+      "file": "soft-minimal-03.jpg",
+      "bytes": 347808
+    }
+  ]
+}

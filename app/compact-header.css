@@ -1,0 +1,40 @@
+html { scroll-padding-top: 84px; }
+.header .header-inner { height: 72px; }
+.header .wordmark { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; letter-spacing: 0; flex-shrink: 0; }
+.header .wordmark > .brand-prefix { display: block; font-family: var(--font-body), sans-serif; font-size: 7px; line-height: 1.55; letter-spacing: .19em; font-weight: 600; color: var(--taupe); }
+.header .wordmark > .brand-name { font-family: var(--font-serif), Georgia, serif; font-size: 37px; letter-spacing: -.055em; line-height: 1; }
+.header .brand-dot { color: var(--accent); }
+.header .nav { gap: 24px; }
+.header .header-book { min-height: 40px; padding: 8px 15px; font-size: 11px; margin-left: 5px; }
+.header .header-book svg { width: 16px; height: 16px; }
+@media (max-width: 1000px) and (min-width: 761px) { .header .nav { gap: 17px; font-size: 10px; } .header .header-book { padding-inline: 12px; gap: 7px; } }
+@media (max-width: 760px) {
+  html { scroll-padding-top: 72px; }
+  .header .header-inner { height: 60px; }
+  .header .wordmark { gap: 8px; }
+  .header .wordmark > .brand-name { font-size: 33px; }
+  .header .wordmark > .brand-prefix { font-size: 6px; }
+  .header .nav { top: 60px; gap: 0; }
+  .header .nav .header-book { margin-left: 0; min-height: 44px; }
+  .header .menu-toggle { min-width: 44px; min-height: 44px; }
+  .header .menu-toggle svg { width: 22px; height: 22px; }
+}
+
+.header .wordmark { flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; }
+.header .wordmark > .brand-prefix { font-size: 7px; line-height: 1.2; letter-spacing: .24em; padding-left: 2px; }
+.header .wordmark > .brand-name { font-size: 34px; line-height: .9; letter-spacing: -.035em; }
+@media (max-width: 760px) {
+  .header .wordmark { gap: 2px; }
+  .header .wordmark > .brand-prefix { font-size: 6px; }
+  .header .wordmark > .brand-name { font-size: 30px; }
+  .header .menu-toggle { padding: 8px; }
+  .header .menu-toggle svg { width: 28px; height: 28px; }
+}
+
+.header .nav > a:not(.header-book) { font-size: 13px; }
+@media (min-width: 761px) and (max-width: 1000px) {
+  .header .nav > a:not(.header-book) { font-size: 12px; }
+}
+@media (max-width: 760px) {
+  .header .nav > a:not(.header-book) { font-size: 17px; }
+}

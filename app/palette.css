@@ -1,0 +1,19 @@
+:root {
+  --ivory: #fffaf9;
+  --champagne: #f1e2e5;
+  --rose: #b77b90;
+  --ink: #30232b;
+  --taupe: #74616c;
+  --line: #e6d6dd;
+  --gold: #9c5a73;
+  --accent: #73394f;
+}
+.button { background: var(--accent); border-color: var(--accent); }
+.button:hover { background: #5e2c40; }
+.text-link { gap: 0; }
+.text-link:hover { gap: 0; }
+.header-book { border-color: #dbc3ce; }
+footer { background: #30232b; }
+.footer-top p { color: #f0d9e3; }
+.footer-top p span { color: #d2acbd; }
+.footer-bottom { border-color: #765263; color: #e3cdd8; }

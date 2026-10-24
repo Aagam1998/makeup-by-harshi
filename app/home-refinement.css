@@ -1,0 +1,145 @@
+/* A consistent scale and shorter, purposeful sections below the hero. */
+.home-page .home-container { width: min(1240px, 88%); }
+.home-page h2 { font-size: clamp(34px, 3.3vw, 46px); line-height: 1.08; }
+.home-page .home-section-heading { gap: 24px; margin-bottom: 26px; align-items: end; }
+.home-page .home-section-heading .eyebrow { font-size: 9px; letter-spacing: .16em; margin-bottom: 12px; }
+.home-page .home-work { padding-block: 48px; }
+.home-page .home-work .beauty-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+.home-page .home-work .beauty-gallery-item:nth-child(n) { padding-top: 0 !important; margin: 0; }
+.home-page .home-work .beauty-gallery-item:nth-child(n) .photo { aspect-ratio: 3/4 !important; }
+.home-page .home-work .beauty-gallery-caption { padding-top: 12px; }
+.home-page .home-work .beauty-gallery-caption h3 { font-size: 25px; margin-top: 6px; line-height: 1.12; }
+.home-page .home-work .beauty-gallery-caption .eyebrow { font-size: 8px; letter-spacing: .06em; }
+.home-page .home-photo-note { margin-top: 22px; font-size: 12px; max-width: none; }
+.home-page .occasion-nav > a { min-height: 58px; padding-block: 15px; font-size: 21px; }
+.home-page .occasion-nav > a > span:first-child { font-size: 10px; margin-right: 0; }
+.home-page .occasion-explorer { padding-block: 42px; }
+.home-page .occasion-hint { font-size: 12px; }
+.home-page .occasion-tabs { margin-block: 20px 24px; }
+.home-page .occasion-panel { min-height: 340px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.home-page .occasion-preview .photo { min-height: 0; height: 100%; aspect-ratio: auto; }
+.home-page .occasion-details { padding: 28px 36px; }
+.home-page .occasion-details h3 { font-size: 38px; margin-block: 12px; }
+.home-page .occasion-details > p:not(.eyebrow) { font-size: 13px; margin-bottom: 22px; }
+.home-page .home-artist { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 7%; padding-block: 44px; }
+.home-page .home-artist > .artist-portrait { max-width: 340px; aspect-ratio: 1.12; }
+.home-page .home-artist h2 { margin: 12px 0 16px; }
+.home-page .home-artist p:not(.eyebrow) { font-size: 13px; max-width: 470px; }
+.home-page .home-learning { padding-block: 32px; border-top: 1px solid var(--line); gap: 6%; }
+.home-page .home-learning h2 { margin-top: 12px; }
+.home-page .home-learning-copy > p { font-size: 13px; }
+.home-page .home-learning-status { margin-block: 12px 4px; }
+.home-page .booking-faq { padding-block: 40px; gap: 7%; }
+.home-page .booking-faq h2 { margin-top: 12px; }
+.home-page .booking-faq > div > p:last-child { font-size: 12px; margin-top: 14px; }
+.home-page .booking-faq-list summary { min-height: 60px; padding-block: 16px; font-size: 13px; }
+.home-page .booking-guide { padding-block: 38px; gap: 24px 7%; }
+.home-page .booking-guide h2 { margin-top: 12px; }
+.home-page .booking-guide h3 { font-size: 25px; }
+.home-page .booking-guide li { padding-block: 12px; }
+.home-page .booking-guide li p { font-size: 12px; margin-top: 5px; }
+@media (max-width: 1000px) {
+  .home-page .home-work .beauty-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 20px; }
+  .home-page .home-work .beauty-gallery-item:nth-child(n) .photo { aspect-ratio: 1 !important; }
+  .home-page .occasion-details { padding: 24px; }
+}
+@media (max-width: 650px) {
+  .home-page h2 { font-size: 34px; }
+  .home-page .home-work { padding-block: 32px; }
+  .home-page .home-section-heading { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+  .home-page .home-section-heading > .text-link { min-height: 36px; }
+  .home-page .home-work .beauty-gallery { gap: 24px 14px; }
+  .home-page .home-work .beauty-gallery-item:nth-child(n) { grid-column: auto !important; }
+  .home-page .home-work .beauty-gallery-item:nth-child(n) .photo { aspect-ratio: 3/4 !important; }
+  .home-page .home-work .beauty-gallery-caption h3 { font-size: 22px; }
+  .home-page .home-work .beauty-gallery-caption .eyebrow { font-size: 7px; }
+  .home-page .home-photo-note { font-size: 11px; }
+  .home-page .occasion-nav > a { font-size: 17px; gap: 8px; padding: 13px 8px; }
+  .home-page .occasion-nav > a > span { display: none; }
+  .home-page .occasion-explorer { padding-block: 30px; }
+  .home-page .occasion-hint { margin-top: 0; }
+  .home-page .occasion-tabs { gap: 4px 18px; margin-block: 16px 20px; }
+  .home-page .occasion-tabs button { font-size: 11px; }
+  .home-page .occasion-panel { grid-template-columns: 1fr; min-height: 0; }
+  .home-page .occasion-preview .photo { aspect-ratio: 1.5; height: auto; }
+  .home-page .occasion-details { padding: 22px; }
+  .home-page .occasion-details h3 { font-size: 32px; }
+  .home-page .home-artist { grid-template-columns: .65fr 1fr; gap: 20px; padding-block: 32px; align-items: start; }
+  .home-page .home-artist > .artist-portrait { aspect-ratio: 3/4; }
+  .home-page .home-artist h2 { font-size: 31px; }
+  .home-page .home-artist .eyebrow { font-size: 8px; }
+  .home-page .home-artist p:not(.eyebrow) { font-size: 12px; line-height: 1.8; }
+  .home-page .home-learning { grid-template-columns: 1fr; gap: 18px; padding-block: 28px; }
+  .home-page .booking-faq { grid-template-columns: 1fr; gap: 20px; padding-block: 30px; }
+  .home-page .booking-guide { padding-block: 30px; grid-template-columns: 1fr; }
+  .home-page .booking-guide > .button { margin-top: 0; }
+}
+@media (max-width: 360px) { .home-page .home-artist { grid-template-columns: 1fr; } .home-page .home-artist > .artist-portrait { max-width: 210px; aspect-ratio: 1; } }
+
+.home-explore { border-block: 1px solid var(--line); background: #f8f0f3; }
+.home-explore-inner { width: min(1240px, 88%); margin-inline: auto; display: grid; grid-template-columns: .7fr 3fr; align-items: center; gap: 32px; padding-block: 22px; }
+.home-explore-inner > .eyebrow { font-size: 8px; letter-spacing: .16em; max-width: 110px; line-height: 1.8; }
+.home-explore-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.home-explore-links a { display: flex; flex-direction: column; justify-content: center; gap: 6px; padding: 4px 26px; min-height: 56px; border-left: 1px solid #ddc9d2; }
+.home-explore-links a > span { font-family: var(--font-serif), Georgia, serif; font-size: 27px; line-height: 1.1; color: var(--ink); transition: color .2s; }
+.home-explore-links small { font-size: 10px; line-height: 1.6; color: var(--taupe); }
+.home-explore-links a:hover > span { color: var(--accent); }
+@media (max-width: 1000px) {
+  .home-explore-inner { grid-template-columns: 1fr; gap: 14px; padding-block: 18px; }
+  .home-explore-inner > .eyebrow { max-width: none; }
+  .home-explore-links a { padding-inline: 20px; }
+  .home-explore-links a:first-child { border-left: 0; padding-left: 0; }
+}
+@media (max-width: 600px) {
+  .home-explore-inner { gap: 12px; padding-block: 16px; }
+  .home-explore-links a { padding-inline: 12px; min-height: 54px; gap: 5px; }
+  .home-explore-links a > span { font-size: 21px; }
+  .home-explore-links small { font-size: 9px; line-height: 1.5; }
+}
+
+/* One shared horizontal gutter for every homepage section. */
+.home-page { --home-content-width: min(1240px, 88%); --home-gutter: max(6%, calc((100% - 1240px) / 2)); }
+.home-page .home-container { width: var(--home-content-width); margin-inline: auto; padding-inline: 0; }
+.home-page .home-artist,
+.home-page .home-learning,
+.home-page .booking-faq { padding-inline: 0; }
+.home-page .booking-guide.home-container {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding-inline: var(--home-gutter);
+}
+.home-page .home-learning,
+.home-page .booking-faq,
+.home-page .booking-guide { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 6%; }
+.home-page .home-artist { grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); column-gap: 6%; }
+@media (max-width: 650px) {
+  .home-page .home-learning,
+  .home-page .booking-faq,
+  .home-page .booking-guide { grid-template-columns: 1fr; }
+  .home-page .home-artist { grid-template-columns: minmax(0, .65fr) minmax(0, 1fr); gap: 20px; }
+}
+@media (max-width: 360px) { .home-page .home-artist { grid-template-columns: 1fr; } }
+
+.home-page .booking-invitation { background: #73394f; color: #fffaf9; padding-block: 36px; }
+.booking-invitation-inner { width: min(1240px, 88%); margin-inline: auto; }
+.booking-invitation-top { display: flex; justify-content: space-between; align-items: center; gap: 28px; }
+.home-page .booking-invitation h2 { margin: 12px 0; font-size: clamp(36px, 3.7vw, 52px); }
+.home-page .booking-invitation em { color: #f0d9e3; }
+.booking-invitation p { color: #f0d9e3; font-size: 13px; }
+.booking-invitation .eyebrow { color: #f0d9e3; font-size: 9px; }
+.home-page .booking-invitation .button { flex-shrink: 0; background: #fffaf9; border-color: #fffaf9; color: #73394f; }
+.home-page .booking-invitation .button:hover { background: #f1e2e5; border-color: #f1e2e5; }
+.booking-details { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; margin-top: 28px; border-top: 1px solid #ab7d91; padding-top: 22px; }
+.booking-details > div { display: flex; gap: 14px; align-items: start; }
+.booking-detail-number { font-size: 10px; line-height: 1.6; color: #f0d9e3; padding-top: 4px; }
+.booking-details h3 { font-size: 26px; line-height: 1.1; margin-bottom: 8px; }
+.booking-details p { font-size: 12px; line-height: 1.7; }
+@media (max-width: 650px) {
+  .home-page .booking-invitation { padding-block: 28px; }
+  .booking-invitation-top { display: block; }
+  .home-page .booking-invitation h2 { font-size: 36px; }
+  .booking-invitation-top > .button { margin-top: 20px; min-height: 48px; }
+  .booking-details { grid-template-columns: 1fr; gap: 18px; margin-top: 24px; padding-top: 22px; }
+  .booking-details h3 { font-size: 24px; margin-bottom: 5px; }
+}

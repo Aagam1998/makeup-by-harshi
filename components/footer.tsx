@@ -1,0 +1,4 @@
+import Link from 'next/link';
+import { cacheLife } from 'next/cache';
+import { settings } from '@/data/content';
+export default async function Footer(){'use cache';cacheLife('days');return <footer><div className="wrap footer-top"><Link className="wordmark" href="/"><span>MAKEUP BY</span>Harshi.</Link><p>Bridal. Occasion. Beautifully you.<br /><span>Ahmedabad, Gujarat, India</span></p><div><a href={settings.instagram} target="_blank" rel="noopener noreferrer">Instagram </a><a href={settings.educationInstagram} target="_blank" rel="noopener noreferrer">Education Instagram </a></div></div><div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Makeup by Harshi</span><nav aria-label="Footer navigation">{['Portfolio','Services','Academy','About','Contact'].map(x=><Link href={`/${x.toLowerCase()}`} key={x}>{x}</Link>)}</nav></div></footer>}

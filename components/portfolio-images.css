@@ -1,0 +1,21 @@
+/* Comfortable navigation and shared photography viewer. */
+.nav { font-size: 13px; }
+.button, .text-link { font-size: 13px; }
+.portfolio-open { display: block; position: relative; width: 100%; padding: 0; border: 0; background: transparent; color: inherit; text-align: left; }
+.photo-expand { position: absolute; right: 12px; top: 12px; padding: 8px 12px; color: #fff; background: #342a27c9; font-size: 11px; }
+.look-viewer { border: 0; padding: 0; background: #30232b; color: #fffaf9; width: min(860px, 94vw); max-width: 94vw; max-height: 94dvh; margin: auto; overflow: auto; }
+.look-viewer::backdrop { background: #17120fe8; }
+.look-viewer-panel { padding: 12px 22px 20px; }
+.look-viewer-top, .look-viewer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.look-viewer-top { font-size: 12px; padding-bottom: 10px; }
+.look-viewer button { min-width: 44px; min-height: 44px; border: 1px solid #9c7486; background: transparent; color: #fffaf9; padding: 8px 14px; }
+.look-viewer-image { position: relative; height: min(67dvh, 720px); }
+.look-viewer-image img { object-fit: contain; }
+.look-viewer-bottom { padding-top: 16px; text-align: center; }
+.look-viewer-bottom h2 { font-size: clamp(24px, 4vw, 34px); }
+.look-viewer-bottom p { font-size: 11px; color: #e3cdd8; margin-top: 6px; }
+body:has(.look-viewer[open]) { overflow: hidden; }
+@media(max-width:540px) { .look-viewer-panel { padding-inline: 12px; } .look-viewer-bottom { gap: 8px; } .look-viewer-bottom p { font-size: 10px; } }
+.photo-expand { display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border-radius: 50%; }
+.look-viewer .viewer-close { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; }
+.look-viewer .viewer-close:hover { background: #faf5ed12; }

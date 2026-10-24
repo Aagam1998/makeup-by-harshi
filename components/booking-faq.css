@@ -1,0 +1,23 @@
+.booking-faq { display: grid; grid-template-columns: .9fr 1.1fr; gap: 9%; padding-block: 65px; border-top: 1px solid var(--line); }
+.booking-faq h2 { font-size: clamp(38px, 4vw, 56px); margin-top: 18px; }
+.booking-faq > div > p:last-child { font-size: 14px; max-width: 320px; margin-top: 20px; }
+.booking-faq-list details { border-bottom: 1px solid var(--line); }
+.booking-faq-list details:first-child { border-top: 1px solid var(--line); }
+.booking-faq-list summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 76px; padding-block: 22px; font-size: 14px; font-weight: 600; line-height: 1.7; list-style: none; cursor: pointer; }
+.booking-faq-list summary::-webkit-details-marker { display: none; }
+.booking-faq-list summary:focus-visible { outline: 2px solid var(--taupe); outline-offset: 4px; }
+.faq-symbol { position: relative; width: 18px; height: 18px; flex-shrink: 0; }
+.faq-symbol::before, .faq-symbol::after { content: ''; position: absolute; background: var(--ink); }
+.faq-symbol::before { height: 1px; width: 14px; top: 8px; left: 2px; }
+.faq-symbol::after { height: 14px; width: 1px; top: 2px; left: 8px; }
+.booking-faq-list details[open] .faq-symbol::after { display: none; }
+.booking-faq-list details > p { font-size: 14px; line-height: 1.9; padding: 0 34px 24px 0; }
+.look-reference { display: flex; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid #9c7486; margin-top: 18px; padding-top: 16px; }
+.look-reference p { color: #e3cdd8; font-size: 11px; }
+.look-reference a { display: inline-flex; min-height: 44px; align-items: center; gap: 16px; font-size: 13px; color: #fffaf9; border-bottom: 1px solid #b79b83; }
+@media(max-width:650px) {
+  .booking-faq { grid-template-columns: 1fr; padding-block: 45px; gap: 25px; }
+  .booking-faq-list summary { font-size: 13px; min-height: 68px; }
+  .booking-faq-list details > p { font-size: 13px; }
+  .look-reference { flex-direction: column; gap: 7px; align-items: center; }
+}

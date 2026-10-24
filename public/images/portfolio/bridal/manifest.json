@@ -1,0 +1,19 @@
+{
+  "category": "Bridal",
+  "source": "User-supplied photographs",
+  "status": "Integrated into website portfolio",
+  "images": [
+    {
+      "file": "bridal-01.jpg",
+      "bytes": 479385
+    },
+    {
+      "file": "bridal-02.jpg",
+      "bytes": 257420
+    },
+    {
+      "file": "bridal-03.jpg",
+      "bytes": 663586
+    }
+  ]
+}

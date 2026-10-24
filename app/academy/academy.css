@@ -1,0 +1,55 @@
+.learning-page { padding-block: 38px 36px; }
+.learning-intro { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 8%; padding-bottom: 32px; }
+.learning-intro h1 { font-size: clamp(44px, 4.6vw, 66px); line-height: 1.02; margin-top: 14px; }
+.learning-intro h1 em { color: var(--accent); }
+.learning-intro-copy { max-width: 420px; }
+.learning-status { display: inline-block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 99px; color: var(--accent); font-size: 10px; line-height: 1.6; margin-bottom: 14px; }
+.learning-intro-copy p { font-size: 13px; line-height: 1.85; }
+.learning-interests { border-top: 1px solid var(--line); padding-top: 26px; }
+.learning-section-title { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 22px; }
+.learning-section-title h2 { font-size: 32px; }
+.learning-section-title p { font-size: 12px; }
+.learning-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #fff; }
+.learning-option { padding: 26px; display: flex; flex-direction: column; min-width: 0; }
+.learning-option + .learning-option { border-left: 1px solid var(--line); }
+.learning-option-top { display: flex; align-items: center; gap: 12px; margin-bottom: 25px; }
+.learning-number { font-family: var(--font-serif), Georgia, serif; font-size: 25px; color: var(--accent); line-height: 1; }
+.learning-option-top .eyebrow { font-size: 8px; letter-spacing: .1em; }
+.learning-option h3 { font-size: clamp(27px, 2.7vw, 36px); margin-bottom: 14px; line-height: 1.05; }
+.learning-description { font-size: 13px; line-height: 1.85; margin-bottom: 20px; }
+.learning-option .text-link { margin-top: auto; align-self: flex-start; font-size: 12px; }
+.learning-plans { display: grid; grid-template-columns: 1fr 1.1fr; align-items: center; gap: 6%; margin-top: 26px; padding: 24px 28px; background: #f8f0f3; border-radius: 10px; }
+.learning-plans h2 { font-size: 32px; margin-top: 10px; }
+.learning-plans > p { font-size: 12px; line-height: 1.85; }
+.learning-follow { display: flex; align-items: center; justify-content: space-between; gap: 22px; padding-top: 26px; }
+.learning-follow h2 { font-size: 28px; margin-bottom: 8px; }
+.learning-follow p { font-size: 12px; }
+.learning-follow > a { flex-shrink: 0; font-size: 12px; }
+@media (max-width: 900px) {
+  .learning-intro { gap: 32px; }
+  .learning-intro h1 { font-size: 48px; }
+  .learning-option { padding: 22px 18px; }
+  .learning-option h3 { font-size: 29px; }
+  .learning-option-top { align-items: start; gap: 8px; }
+  .learning-option-top .eyebrow { font-size: 7px; }
+}
+@media (max-width: 600px) {
+  .learning-page { padding-block: 26px 30px; }
+  .learning-intro { grid-template-columns: 1fr; gap: 20px; padding-bottom: 24px; }
+  .learning-intro h1 { font-size: 44px; margin-top: 10px; }
+  .learning-intro-copy p { font-size: 12px; }
+  .learning-status { margin-bottom: 10px; }
+  .learning-section-title { display: block; margin-bottom: 18px; }
+  .learning-section-title h2 { font-size: 30px; margin-bottom: 9px; }
+  .learning-options { grid-template-columns: 1fr; }
+  .learning-option { padding: 20px; }
+  .learning-option + .learning-option { border-left: 0; border-top: 1px solid var(--line); }
+  .learning-option-top { align-items: center; margin-bottom: 14px; }
+  .learning-option-top .eyebrow { font-size: 8px; }
+  .learning-option h3 { font-size: 29px; margin-bottom: 10px; }
+  .learning-description { font-size: 12px; margin-bottom: 10px; }
+  .learning-plans { grid-template-columns: 1fr; gap: 14px; padding: 22px; margin-top: 22px; }
+  .learning-plans h2 { font-size: 29px; }
+  .learning-follow { display: block; padding-top: 24px; }
+  .learning-follow > a { margin-top: 10px; }
+}

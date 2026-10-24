@@ -1,0 +1,106 @@
+/* An image-led sequence with purposeful, accessible interaction. */
+.home-work { padding-bottom: 64px; }
+.home-work .beauty-gallery { grid-template-columns: 1.15fr .8fr 1fr; align-items: start; gap: 28px; }
+.home-work .beauty-gallery-item:nth-child(2) { padding-top: 72px; }
+.home-work .beauty-gallery-item:nth-child(3) { padding-top: 28px; }
+.home-work .beauty-gallery-item:nth-child(2) .photo { aspect-ratio: .85; }
+.home-work .beauty-gallery-caption h3 { font-size: clamp(25px, 2.5vw, 34px); }
+.occasion-explorer { background: #f4e9ed; padding-block: 70px; }
+.occasion-hint { font-size: 14px; line-height: 1.8; }
+.occasion-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin: 30px 0; }
+.occasion-tabs button { min-height: 46px; border: 1px solid #dbc3ce; background: transparent; padding: 10px 24px; font-size: 13px; color: var(--ink); transition: background .2s, color .2s; }
+.occasion-tabs button[aria-selected=true] { background: var(--ink); border-color: var(--ink); color: var(--ivory); }
+.occasion-panel { display: grid; grid-template-columns: .9fr 1.1fr; background: var(--ivory); min-height: 450px; }
+.occasion-preview .photo { height: 100%; aspect-ratio: 1; min-height: 450px; }
+.occasion-preview img { object-position: center 28%; }
+.occasion-details { align-self: center; padding: 45px 12%; }
+.occasion-details h3 { font-size: clamp(34px, 3.4vw, 48px); margin-block: 18px; }
+.occasion-details > p:not(.eyebrow) { font-size: 14px; line-height: 1.9; }
+.occasion-prompt { margin-block: 25px; border-top: 1px solid var(--line); padding-top: 20px; }
+.occasion-prompt > span { font-size: 10px; letter-spacing: .15em; }
+.occasion-prompt p { font-size: 13px; margin-top: 8px; }
+.occasion-details .button { font-size: 12px; gap: 20px; max-width: 100%; }
+.occasion-details .text-link { display: flex; width: fit-content; margin-top: 10px; font-size: 12px; }
+.occasion-details > .occasion-pending { font-size: 11px!important; margin-top: 18px; }
+.occasion-inspiration { display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 100%; min-height: 450px; background: #ead4dd; padding: 40px 20px; text-align: center; }
+.occasion-initial { font-family: var(--font-serif),serif; font-size: 140px; line-height: 1; color: #99536c; }
+.occasion-inspiration > p { font-family: var(--font-serif),serif; color: var(--ink); font-size: 30px; line-height: 1.1; }
+.home-artist { align-items: center; grid-template-columns: .8fr 1.2fr; padding-block: 75px; }
+.home-artist h2 { margin-top: 18px; }
+.artist-signature { min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid var(--line); background: #f4e9ed; }
+.artist-signature > span { font-family: var(--font-serif),serif; font-size: 140px; font-style: italic; line-height: 1; color: #99536c; }
+.artist-signature > p { font-size: 9px!important; letter-spacing: .2em; margin-top: 20px!important; }
+.home-learning { padding-block: 55px; }
+.booking-guide { border-top: 1px solid var(--line); padding-block: 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 35px 8%; align-items: start; }
+.booking-guide h2 { font-size: clamp(37px, 3.7vw, 52px); margin-top: 18px; }
+.booking-guide ol { list-style: none; margin: 0; padding: 0; }
+.booking-guide li { display: flex; gap: 20px; padding-block: 17px; border-bottom: 1px solid var(--line); }
+.booking-guide li:first-child { padding-top: 0; }
+.booking-guide li > span { font-size: 10px; padding-top: 5px; color: var(--taupe); }
+.booking-guide h3 { font-size: 28px; }
+.booking-guide li p { font-size: 13px; margin-top: 8px; }
+.booking-guide > .button { width: fit-content; margin-top: -20px; }
+@media(max-width:800px) {
+  .home-work .beauty-gallery { gap: 18px; }
+  .occasion-panel { grid-template-columns: .85fr 1.15fr; }
+  .occasion-details { padding: 30px 8%; }
+  .occasion-tabs button { padding-inline: 18px; }
+}
+@media(max-width:600px) {
+  .beauty-hero-image { order: -1; }
+  .beauty-hero-image .photo { aspect-ratio: 1.2; }
+  .beauty-hero-image img { object-position: center 30%; }
+  .beauty-hero-copy { padding-block: 26px 30px; }
+  .beauty-hero h1 { font-size: clamp(42px, 11vw, 60px); }
+  .beauty-hero-description { display: none; }
+  .beauty-hero-copy .eyebrow { margin-bottom: 15px; }
+  .beauty-hero-intro { margin-top: 15px; }
+  .home-work .beauty-gallery { grid-template-columns: 1fr 1fr; gap: 26px 16px; }
+  .home-work .beauty-gallery-item:nth-child(2) { padding-top: 40px; }
+  .home-work .beauty-gallery-item:nth-child(3) { padding-top: 0; }
+  .home-work .beauty-gallery-item:nth-child(3) .photo { aspect-ratio: 1.18; }
+  .occasion-explorer { padding-block: 45px; }
+  .occasion-hint { margin-top: 18px; font-size: 13px; }
+  .occasion-hint br { display: none; }
+  .occasion-tabs { gap: 8px; margin-block: 25px; }
+  .occasion-tabs button { padding-inline: 15px; font-size: 12px; }
+  .occasion-panel { grid-template-columns: 1fr; }
+  .occasion-preview .photo { height: auto; min-height: 0; aspect-ratio: 1.35; }
+  .occasion-inspiration { min-height: 230px; padding-block: 25px; }
+  .occasion-initial { font-size: 80px; }
+  .occasion-inspiration > p { font-size: 24px; }
+  .occasion-details { padding: 28px 24px; }
+  .occasion-details h3 { font-size: 37px; }
+  .occasion-details .button { font-size: 11px; padding-inline: 16px; gap: 12px; }
+  .home-artist { grid-template-columns: 1fr; padding-block: 45px; gap: 28px; }
+  .artist-signature { min-height: 190px; }
+  .artist-signature > span { font-size: 100px; }
+  .home-learning { padding-block: 40px; }
+  .booking-guide { grid-template-columns: 1fr; padding-block: 45px; gap: 25px; }
+  .booking-guide > .button { margin-top: 0; }
+}
+@media(prefers-reduced-motion:no-preference) {
+  .occasion-details { animation: occasion-arrive .28s ease-out; }
+  @keyframes occasion-arrive { from { transform: translateY(7px); } to { transform: translateY(0); } }
+  @supports(animation-timeline:view()) {
+    .home-work .beauty-gallery-item, .home-artist, .home-learning { animation: journey-arrive linear both; animation-timeline: view(); animation-range: entry 0% entry 30%; }
+    @keyframes journey-arrive { from { transform: translateY(20px); } to { transform: translateY(0); } }
+  }
+}
+
+/* Real portfolio images: keep faces and hairstyle details in view. */
+.beauty-hero-image .photo img { object-position: 50% 32%; }
+.home-work .beauty-gallery-item:nth-child(n+4) { padding-top: 10px; }
+@media(max-width:600px) {
+  .home-work .beauty-gallery-item:nth-child(3n) { grid-column: 1 / -1; }
+  .home-work .beauty-gallery-item:nth-child(3n) .photo { aspect-ratio: 1.15; }
+  .home-work .beauty-gallery-item:nth-child(5) { padding-top: 25px; }
+  .beauty-hero-image .photo { aspect-ratio: 1.1; }
+}
+/* Do not let the preview's minimum height force a square wider than its grid column. */
+.occasion-panel { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+.occasion-preview { min-width: 0; overflow: hidden; }
+.occasion-preview .photo { width: 100%; aspect-ratio: auto; }
+.occasion-details { min-width: 0; }
+@media(max-width:800px) { .occasion-panel { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); } }
+@media(max-width:600px) { .occasion-panel { grid-template-columns: 1fr; } .occasion-preview .photo { aspect-ratio: 1.35; } }

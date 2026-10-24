@@ -1,0 +1,19 @@
+{
+  "category": "Hairstyling",
+  "source": "User-supplied photographs",
+  "status": "Integrated into website portfolio",
+  "images": [
+    {
+      "file": "hairstyling-01.jpg",
+      "bytes": 239108
+    },
+    {
+      "file": "hairstyling-02.jpg",
+      "bytes": 364055
+    },
+    {
+      "file": "hairstyling-03.jpg",
+      "bytes": 261457
+    }
+  ]
+}

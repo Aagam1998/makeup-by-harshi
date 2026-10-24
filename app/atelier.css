@@ -1,0 +1,149 @@
+/* A warmer portrait composition and larger, deliberately paced photographs. */
+.atelier-hero { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 4%; width: min(1360px, 90%); margin: 0 auto; padding-block: 45px 58px; }
+.atelier-copy { padding-left: 2%; }
+.atelier-copy .eyebrow { font-size: 10px; letter-spacing: .16em; margin-bottom: 28px; }
+.atelier-copy h1 { font-size: clamp(64px, 7.2vw, 108px); line-height: .96; letter-spacing: -.045em; }
+.atelier-copy h1 em { color: #99536c; }
+.atelier-subtitle { color: var(--ink); font-size: 16px; line-height: 1.7; max-width: 330px; margin-top: 28px; }
+.atelier-description { font-size: 13px; line-height: 1.9; max-width: 335px; margin-top: 12px; }
+.atelier-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 24px; margin-top: 28px; }
+.atelier-actions .button { background: #73394f; border-color: #73394f; min-height: 52px; }
+.atelier-actions .text-link { font-size: 12px; }
+.atelier-bottom { display: flex; gap: 14px; align-items: center; margin-top: 45px; }
+.atelier-bottom p { font-size: 10px; }
+.atelier-rule { width: 34px; height: 1px; background: #b77b90; }
+.atelier-composition { position: relative; padding: 0 25px 55px 45px; min-width: 0; }
+.atelier-main-photo { margin-left: 15%; border: 9px solid #f3e6eb; }
+.atelier-main-photo .photo { aspect-ratio: .73; }
+.atelier-detail-photo { position: absolute; bottom: 0; left: 0; width: 43%; border: 8px solid var(--ivory); box-shadow: 0 12px 30px #342a2710; background: var(--ivory); }
+.atelier-detail-photo .photo { aspect-ratio: .84; }
+.atelier-detail-photo > span { display: block; font-size: 7px; text-align: center; letter-spacing: .17em; padding-top: 8px; }
+.atelier-image-label { position: absolute; right: 0; top: 22px; writing-mode: vertical-rl; font-size: 8px; letter-spacing: .22em; color: var(--taupe); }
+.home-page .occasion-nav { background: transparent; border-top: 1px solid var(--line); }
+.home-page .occasion-nav > a { min-height: 70px; font-size: 23px; border: 0; padding-inline: 20px; }
+.home-page .occasion-nav > a:first-child { border: 0; }
+.home-work { padding-block: 80px; }
+.home-work .home-section-heading { margin-bottom: 42px; }
+.home-work .beauty-gallery { display: grid; grid-template-columns: 1.05fr .95fr; gap: 50px 55px; align-items: start; }
+.home-work .beauty-gallery-item { padding-top: 0!important; min-width: 0; }
+.home-work .beauty-gallery-item:nth-child(2n) { padding-top: 85px!important; }
+.home-work .beauty-gallery-item .photo { aspect-ratio: .8!important; }
+.home-work .beauty-gallery-item:nth-child(2) .photo { aspect-ratio: .85!important; }
+.home-work .beauty-gallery-caption { padding-top: 20px; }
+.home-work .beauty-gallery-caption h3 { font-size: 34px; margin-top: 9px; }
+.home-work .beauty-gallery-caption .eyebrow { font-size: 9px; letter-spacing: .12em; }
+.home-work .photo-expand { top: auto; bottom: 15px; right: 15px; background: #f8f5f0eb; color: #30232b; }
+.home-page .occasion-explorer { background: #f1e2e5; padding-block: 65px; }
+.home-page .occasion-tabs { border-bottom: 1px solid #dbc3ce; gap: 8px 24px; }
+.home-page .occasion-tabs button { border: 0; border-bottom: 2px solid transparent; background: transparent; padding: 12px 0 16px; color: var(--taupe); }
+.home-page .occasion-tabs button[aria-selected=true] { color: var(--ink); border-bottom-color: #73394f; background: transparent; }
+.home-page .occasion-panel { background: #fffaf9; }
+.home-page .occasion-details h3 { font-size: clamp(38px, 4vw, 55px); }
+.home-page .artist-signature { min-height: 220px; border: 0; background: transparent; }
+.home-page .artist-signature > span { font-size: 120px; }
+.home-page .home-artist { padding-block: 58px; grid-template-columns: .5fr 1.5fr; gap: 8%; }
+.home-page .home-learning { padding-block: 50px; }
+.home-page .booking-guide { width: 100%; padding: 60px max(6%, calc((100vw - 1240px) / 2)); background: #73394f; color: #fffaf9; border: 0; }
+.home-page .booking-guide p, .home-page .booking-guide .eyebrow, .home-page .booking-guide em, .home-page .booking-guide li > span { color: #f0d9e3; }
+.home-page .booking-guide li { border-color: #ab7d91; }
+.home-page .booking-guide .button { background: #fff5f8; color: #30232b; border-color: #fff5f8; }
+@media(max-width:1000px) {
+  .atelier-hero { grid-template-columns: .95fr 1.05fr; gap: 2%; }
+  .atelier-copy h1 { font-size: clamp(55px, 7.2vw, 76px); }
+  .atelier-composition { padding-left: 20px; padding-right: 18px; padding-bottom: 35px; }
+  .atelier-main-photo { margin-left: 10%; border-width: 6px; }
+  .atelier-detail-photo { width: 43%; border-width: 6px; }
+  .atelier-subtitle { font-size: 14px; }
+  .atelier-description { font-size: 12px; }
+  .atelier-copy .eyebrow { font-size: 8px; margin-bottom: 20px; }
+  .atelier-actions { gap: 8px 18px; margin-top: 20px; }
+  .atelier-bottom { margin-top: 25px; }
+  .atelier-bottom p { font-size: 8px; }
+  .home-work .beauty-gallery { gap: 35px; }
+}
+@media(max-width:650px) {
+  .atelier-hero { display: flex; flex-direction: column; width: 88%; padding-block: 28px 35px; gap: 28px; align-items: stretch; }
+  .atelier-copy { padding: 0; }
+  .atelier-copy .eyebrow { font-size: 8px; margin-bottom: 17px; }
+  .atelier-copy h1 { font-size: clamp(53px, 12.8vw, 78px); line-height: .95; }
+  .atelier-subtitle { font-size: 13px; margin-top: 18px; max-width: none; }
+  .atelier-description { display: none; }
+  .atelier-actions { margin-top: 18px; gap: 18px; }
+  .atelier-actions .button { font-size: 12px; padding-inline: 17px; gap: 18px; min-height: 48px; }
+  .atelier-actions .text-link { font-size: 11px; gap: 12px; }
+  .atelier-bottom { display: none; }
+  .atelier-composition { padding: 0 16px 32px 20px; }
+  .atelier-main-photo { margin-left: 14%; }
+  .atelier-main-photo .photo { aspect-ratio: .92; }
+  .atelier-detail-photo { width: 42%; }
+  .atelier-detail-photo .photo { aspect-ratio: .82; }
+  .atelier-image-label { font-size: 7px; }
+  .home-work { padding-block: 50px; }
+  .home-work .home-section-heading { margin-bottom: 28px; }
+  .home-work .beauty-gallery { grid-template-columns: 1fr; gap: 34px; }
+  .home-work .beauty-gallery-item { grid-column: auto!important; }
+  .home-work .beauty-gallery-item:nth-child(2n) { padding-top: 0!important; }
+  .home-work .beauty-gallery-item .photo { aspect-ratio: .95!important; }
+  .home-work .beauty-gallery-item:nth-child(3) .photo { aspect-ratio: .9!important; }
+  .home-work .beauty-gallery-caption { padding-top: 15px; }
+  .home-work .beauty-gallery-caption h3 { font-size: 31px; }
+  .home-page .occasion-tabs { gap: 5px 20px; }
+  .home-page .occasion-tabs button { font-size: 12px; padding-bottom: 10px; }
+  .home-page .occasion-explorer { padding-block: 45px; }
+  .home-page .home-artist { grid-template-columns: 1fr; gap: 8px; padding-block: 40px; }
+  .home-page .artist-signature { display: none; }
+  .home-page .booking-guide { padding: 45px 6%; }
+}
+@media(prefers-reduced-motion:no-preference) {
+  .atelier-main-photo { animation: portrait-enter .8s ease-out; }
+  .atelier-detail-photo { animation: portrait-enter 1s ease-out; }
+  @keyframes portrait-enter { from { transform: translateY(12px); } to { transform: translateY(0); } }
+}
+/* Quiet links and a blush / berry finish. */
+.atelier-actions .text-link, .home-page .text-link { gap: 0; }
+.home-page .occasion-nav > a { justify-content: center; }
+.home-page .occasion-nav > a > span:first-child { margin-right: 12px; }
+.home-page .booking-guide .button { background: #fff5f8; color: #73394f; }
+
+/* Match the desktop hero to the header's content edges. */
+@media (min-width: 651px) {
+  .home-page .atelier-hero { width: min(1360px, 92%); align-items: start; padding-top: 36px; }
+  .home-page .atelier-copy { padding-left: 0; padding-top: 0; }
+}
+
+@media (min-width: 651px) {
+  .home-page .atelier-composition {
+    width: min(100%, max(300px, calc((100svh - 190px) * .86)));
+    justify-self: end;
+  }
+  .home-page .atelier-hero { padding-block: 30px 34px; }
+}
+@media (min-width: 651px) and (max-height: 800px) {
+  .home-page .atelier-copy .eyebrow { margin-bottom: 18px; }
+  .home-page .atelier-copy h1 { font-size: clamp(54px, 6.4vw, 88px); }
+  .home-page .atelier-subtitle { margin-top: 20px; }
+  .home-page .atelier-actions { margin-top: 20px; }
+  .home-page .atelier-bottom { margin-top: 22px; }
+}
+
+/* Keep the portrait and copy together rather than separating them across the viewport. */
+@media (min-width: 651px) {
+  .home-page .atelier-hero {
+    width: min(1360px, 92%);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: clamp(24px, 3.5vw, 48px);
+    align-items: center;
+  }
+  .home-page .atelier-composition {
+    width: min(100%, max(300px, calc((100svh - 190px) * .86)));
+    justify-self: start;
+    padding-left: 16px;
+  }
+  .home-page .atelier-copy { max-width: 530px; justify-self: end; width: 100%; }
+  .home-page .atelier-main-photo { margin-left: 9%; }
+  .home-page .atelier-subtitle { max-width: 440px; }
+  .home-page .atelier-description { max-width: 410px; }
+}
+@media (min-width: 1100px) {
+  .home-page .atelier-hero { grid-template-columns: minmax(0, 530px) minmax(0, 590px); justify-content: center; }
+}

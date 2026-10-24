@@ -1,0 +1,13 @@
+/* Natural photo proportions in a compact contact-sheet layout. */
+.portfolio-page .editorial-grid { display: block; columns: 3; column-gap: 28px; }
+.portfolio-page .editorial-grid figure { display: inline-block; vertical-align: top; width: 100%; break-inside: avoid; margin-bottom: 35px; }
+.portfolio-page .tile-caption { align-items: flex-start; }
+.portfolio-page .tile-caption h2 { font-size: 30px; line-height: 1.1; }
+.portfolio-page .tile-caption .eyebrow { font-size: 9px; }
+.portfolio-page .photo-expand { top: auto; bottom: 12px; background: #f8f5f0eb; color: #30232b; }
+@media(max-width:800px) { .portfolio-page .editorial-grid { columns: 2; column-gap: 20px; } }
+@media(max-width:430px) {
+  .portfolio-page .editorial-grid { columns: 1; }
+  .portfolio-page .tile-caption h2 { font-size: 30px; }
+  .portfolio-page .editorial-grid figure { margin-bottom: 30px; }
+}

@@ -1,0 +1,19 @@
+{
+  "category": "Sider’s Makeup",
+  "source": "User-supplied photographs",
+  "status": "Integrated into website portfolio",
+  "images": [
+    {
+      "file": "side-makeup-01.jpg",
+      "bytes": 327033
+    },
+    {
+      "file": "side-makeup-02.jpg",
+      "bytes": 409022
+    },
+    {
+      "file": "side-makeup-03.jpg",
+      "bytes": 362595
+    }
+  ]
+}
