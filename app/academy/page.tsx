@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { settings, workshops } from '@/data/content';
-import { Enquire } from '@/components/ui';
+import { Enquire, Photo } from '@/components/ui';
 import { InstagramIcon } from '@/components/icons';
 import './academy.css';
 
@@ -15,9 +15,9 @@ const audience: Record<string, string> = {
 };
 export default function Academy() {
   return <div className="learning-page wrap">
-    <header className="learning-intro">
-      <div><p className="eyebrow">LEARN WITH HARSHI · AHMEDABAD</p><h1>A little curiosity.<br /><em>A place to begin.</em></h1></div>
-      <div className="learning-intro-copy"><span className="learning-status">Future classes & workshops</span><p>Makeup education is Harshi’s next chapter. Explore the proposed learning areas and tell her what you’d love to learn.</p></div>
+    <header className="academy-hero">
+      <div className="academy-hero-copy"><p className="eyebrow">LEARN WITH HARSHI · AHMEDABAD</p><h1>Your curiosity.<br /><em>A creative beginning.</em></h1><p>For the makeup you do for yourself.<br />For the artist you’d love to become.</p><div className="academy-hero-status"><span aria-hidden="true" /><div><strong>Future classes & workshops</strong><p>In planning. Share what you’d like to learn.</p></div></div><a href="#learning-interests-title" className="text-link">Find your starting point</a></div>
+      <figure className="academy-hero-image"><Photo src="/images/portfolio/soft-minimal-elegance/soft-minimal-01.jpg" alt="Soft makeup by Harshi with rose eyeshadow and a natural lip" focalPoint="50% 0%" priority sizes="(max-width: 600px) 88vw, 40vw" /><figcaption><span>THE DETAILS MAKE THE DIFFERENCE</span><span>MAKEUP BY HARSHI</span></figcaption></figure>
     </header>
     <section className="learning-interests" aria-labelledby="learning-interests-title">
       <div className="learning-section-title"><h2 id="learning-interests-title">What interests you?</h2><p>Choose a starting point for your conversation.</p></div>
